@@ -17,21 +17,16 @@ def shop():
  item_open = False
  calculator_open = False
 
-
  def registrationwindow():
    window.destroy()
    from registration import registration       
    registration()
-   
-       
-       
-
+         
  def additemswindow():
    window.destroy()
    from additems import additems
    additems()
     
-
  def calculatorwindow():  
    window.destroy()
    from calculator import calculator
@@ -45,10 +40,6 @@ def shop():
 
  more2 = tk.Button(window,text="calculator",bg="#bfa952", command = calculatorwindow  )
  more2.grid(row=1, column=2,padx=10,pady=10)
-
-
-
-
 
 
  window.mainloop()
