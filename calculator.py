@@ -82,4 +82,5 @@ def calculator():
     button_clear.grid(row=5, columnspan=4, sticky="NSEW")
 
     calc.mainloop()
-calculator()
+ if __name__ == "__main__":   
+ calculator()
