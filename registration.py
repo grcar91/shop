@@ -157,5 +157,5 @@ def registration():
     shop_button.pack()
 
     window1.mainloop()
-
-registration()
+if __name__ == "__main__":
+ registration()
