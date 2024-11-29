@@ -184,5 +184,5 @@ def additems():
     shop_button.grid(row=9, column=3)
 
     windo.mainloop()
-
-additems()
+if __name__ == "__main__":
+ additems()
