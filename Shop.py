@@ -43,5 +43,5 @@ def shop():
 
 
  window.mainloop()
-
-shop() 
+if __name__ == "__main__":
+ shop() 
