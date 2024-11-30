@@ -12,11 +12,6 @@ def shop():
  label = tk.Label(window,text="Welcome to Shop",font=('Times New Roman', 25, 'bold') ,bg="#91c1db")
  label.grid(row=0,column=1,pady=50)
  
- global registration_open ,item_open, calculator_open
- registration_open = False
- item_open = False
- calculator_open = False
-
  def registrationwindow():
    window.destroy()
    from registration import registration       
