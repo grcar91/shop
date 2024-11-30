@@ -13,17 +13,16 @@ def shop():
  label.grid(row=0,column=1,pady=50)
  
  def registrationwindow():
-   window.destroy()
+   window.withdraw()
    from registration import registration       
    registration()
          
  def additemswindow():
-   window.destroy()
+   window.withdraw()
    from additems import additems
    additems()
     
  def calculatorwindow():  
-   window.destroy()
    from calculator import calculator
    calculator()
    
