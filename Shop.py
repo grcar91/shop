@@ -26,24 +26,21 @@ def singin():
  
  def delete_singin():
    username_entry.delete(0,tk.END)
-   password_entry.get(0,tk.END)
+   password_entry.delete(0,tk.END)
 
  login = False
  def validuser():
   nonlocal login
   username = username_entry.get()
   password = password_entry.get()
-  while True:
-    try:
-       if username =="" and password == "":
-        singinwindow.destroy()
-        login = True
-        return
-       else:
-        delete_singin()
-    except:
-      messagebox.showerror("","Invalid username or password!")
-      return
+
+  if username =="user" and password == "1111":
+    singinwindow.destroy()
+    login = True
+  else:
+    messagebox.showerror("","Invalid username or password!")
+    delete_singin()
+    return
  
  singin_button = tk.Button(singinwindow,text="Sing-in",command=validuser)
  singin_button.pack(pady=5)
